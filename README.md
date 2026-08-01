@@ -26,12 +26,12 @@ I made this project to improve my programming skills in C# and gain experience w
 
 ### Calculator
 
-![Calculator](screenshots/calculator.png)
+![Calculator](Screenshots/calculator.png)
 
 ### Temperature Converter
 
-![Converter](screenshots/converter.png)
+![Converter](Screenshots/converter.png)
 
 ### Theme Selection
 
-![Theme](screenshots/theme.png)
+![Theme](Screenshots/theme.png)
