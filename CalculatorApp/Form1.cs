@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.Windows.Forms;
 using System.Reflection.Emit;
-namespace CalculatorApp1._0
+namespace CalculatorApp
 {
     public partial class Calculator : Form
     {
@@ -56,11 +56,31 @@ namespace CalculatorApp1._0
         {
             if (calc == true)
             {
-                txtEnter.Text += ".";
+                if (!txtEnter.Text.Contains("."))
+                {
+                    if (txtEnter.Text == "")
+                    {
+                        txtEnter.Text += "0.";
+                    }
+                    else
+                    {
+                        txtEnter.Text += ".";
+                    }
+                }
             }
             else if (DegreeConverter == true)
             {
-                txtConverterInput.Text += ".";
+                if (!txtConverterInput.Text.Contains("."))
+                {
+                    if (txtConverterInput.Text == "")
+                    {
+                        txtConverterInput.Text += "0.";
+                    }
+                    else
+                    {
+                        txtConverterInput.Text += ".";
+                    }
+                }
             }
         }
 
@@ -245,7 +265,7 @@ namespace CalculatorApp1._0
             txtEnter.Text = "";
         }
 
-        private void btnEaqual_Click(object sender, EventArgs e)
+        private void btnEqual_Click(object sender, EventArgs e)
         {
             if (op == "+")
             {
@@ -408,7 +428,7 @@ namespace CalculatorApp1._0
             btn7.BackColor = Color.DeepSkyBlue;
             btn8.BackColor = Color.DeepSkyBlue;
             btn9.BackColor = Color.DeepSkyBlue;
-            btnEaqual.BackColor = Color.DeepSkyBlue;
+            btnEqual.BackColor = Color.DeepSkyBlue;
             btnPlus.BackColor = Color.DeepSkyBlue;
             btnMinus.BackColor =Color.DeepSkyBlue;
             btnTimes.BackColor = Color.DeepSkyBlue;
@@ -445,7 +465,7 @@ namespace CalculatorApp1._0
             btn7.BackColor = Color.IndianRed;
             btn8.BackColor = Color.IndianRed;
             btn9.BackColor = Color.IndianRed;
-            btnEaqual.BackColor = Color.IndianRed;
+            btnEqual.BackColor = Color.IndianRed;
             btnPlus.BackColor = Color.IndianRed;
             btnMinus.BackColor = Color.IndianRed;
             btnTimes.BackColor = Color.IndianRed;
@@ -567,10 +587,17 @@ namespace CalculatorApp1._0
 
         private void btnConvertDegree_Click(object sender, EventArgs e)
         {
+
+            if (txtConverterInput.Text == "")
+            {
+                txtConverterInput.Text = "0";
+                return;
+            }
+
             if (CtoF == true)
             {
                 String Input = txtConverterInput.Text;
-                ConverterInput = Convert.ToDouble(Input);
+                ConverterInput = Convert.ToDouble(Input);    
                 ConverterResult = ConverterInput * 1.8 + 32;
                 txtConverterResult.Text = ConverterResult.ToString();
             }

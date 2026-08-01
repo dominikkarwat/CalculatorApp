@@ -1,4 +1,4 @@
-﻿namespace CalculatorApp1._0
+﻿namespace CalculatorApp
 {
     partial class Calculator
     {
@@ -42,7 +42,7 @@
             this.btn7 = new System.Windows.Forms.Button();
             this.btn8 = new System.Windows.Forms.Button();
             this.btn9 = new System.Windows.Forms.Button();
-            this.btnEaqual = new System.Windows.Forms.Button();
+            this.btnEqual = new System.Windows.Forms.Button();
             this.btnPlus = new System.Windows.Forms.Button();
             this.btnMinus = new System.Windows.Forms.Button();
             this.btnTimes = new System.Windows.Forms.Button();
@@ -242,18 +242,18 @@
             this.btn9.UseVisualStyleBackColor = false;
             this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
-            // btnEaqual
+            // btnEqual
             // 
-            this.btnEaqual.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnEaqual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEaqual.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEaqual.Location = new System.Drawing.Point(386, 156);
-            this.btnEaqual.Name = "btnEaqual";
-            this.btnEaqual.Size = new System.Drawing.Size(71, 123);
-            this.btnEaqual.TabIndex = 13;
-            this.btnEaqual.Text = "=";
-            this.btnEaqual.UseVisualStyleBackColor = false;
-            this.btnEaqual.Click += new System.EventHandler(this.btnEaqual_Click);
+            this.btnEqual.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnEqual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEqual.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEqual.Location = new System.Drawing.Point(386, 156);
+            this.btnEqual.Name = "btnEqual";
+            this.btnEqual.Size = new System.Drawing.Size(71, 123);
+            this.btnEqual.TabIndex = 13;
+            this.btnEqual.Text = "=";
+            this.btnEqual.UseVisualStyleBackColor = false;
+            this.btnEqual.Click += new System.EventHandler(this.btnEqual_Click);
             // 
             // btnPlus
             // 
@@ -564,7 +564,7 @@
             this.Controls.Add(this.btnTimes);
             this.Controls.Add(this.btnMinus);
             this.Controls.Add(this.btnPlus);
-            this.Controls.Add(this.btnEaqual);
+            this.Controls.Add(this.btnEqual);
             this.Controls.Add(this.btn9);
             this.Controls.Add(this.btn8);
             this.Controls.Add(this.btn7);
@@ -610,7 +610,7 @@
         private System.Windows.Forms.Button btn7;
         private System.Windows.Forms.Button btn8;
         private System.Windows.Forms.Button btn9;
-        private System.Windows.Forms.Button btnEaqual;
+        private System.Windows.Forms.Button btnEqual;
         private System.Windows.Forms.Button btnPlus;
         private System.Windows.Forms.Button btnMinus;
         private System.Windows.Forms.Button btnTimes;
